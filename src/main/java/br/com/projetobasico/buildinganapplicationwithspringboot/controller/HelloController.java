@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/") //Quando esse método for chamado, através de uma requisição GET na URL "http://127.0.0.1:8080/", será retornada apenas essa String para o corpo da requisição GET.
     public String index(){
-        return "Saudações do Spring Boot!";
+        return "Greetings from Spring Boot!";
     }
 }

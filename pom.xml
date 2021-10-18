@@ -15,6 +15,7 @@
 	<description>Criando uma Aplicação com o Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<property name="contentType" value="text/html;charset=UTF-8" />
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +28,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency> <!-- Essa dependência serve para obtermos métricas da aplicação, assim, são inseridos vários endpoints que possibilitam a obtenção dessas métricas. -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
